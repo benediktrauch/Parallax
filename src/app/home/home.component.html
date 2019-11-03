@@ -43,13 +43,16 @@
 <div class="menu" [ngClass]="{ active: menuOpen }">
   <ul class="menuList">
     <li class="listItem" (click)="scrollToElement(first)">
-      Link 1
+      Positive UX
     </li>
     <li class="listItem" (click)="scrollToElement(second)">
-      Link 2
+      Positive People
     </li>
     <li class="listItem" (click)="scrollToElement(third)">
-      Link 3
+      Positive Future
+    </li>
+    <li class="listItem" (click)="scrollToElement(about)">
+      About
     </li>
   </ul>
 </div>
@@ -132,7 +135,7 @@
   <section class="section info">
     <span></span>
 
-    <div class="content">
+    <div class="content" #about>
       <h1>About</h1>
       <p class="refs">
         Images: <a href="https://www.nasa.gov" target="_blank">www.nasa.gov</a>
